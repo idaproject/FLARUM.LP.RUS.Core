@@ -1,6 +1,6 @@
 # Информация
 
-![Russian Language Pack](//upload.wikimedia.org/wikipedia/commons/thumb/9/94/Flag-map_of_Russia.svg/1000px-Flag-map_of_Russia.svg.png)
+![Russian Language Pack](https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Flag-map_of_Russia.svg/1000px-Flag-map_of_Russia.svg.png)
 
 Пакет русской локализации движка [**Flarum**](//flarum.org/) - программного обеспечения нового поколения для создания сообществ. Реализована поддержка единичных и множественных чисел (переменных). Все фразы взяты в двойные кавычки для предотвращения конфликтов со знаками препинания, потому что их в русском языке используется большее количество, по сравнению с английским.
 
