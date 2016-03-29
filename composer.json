@@ -1,7 +1,7 @@
 {
   "name": "csi/flarum-ext-russian",
   "type": "flarum-extension",
-  "description": "Russian language pack.",
+  "description": "Russian language pack for Flarum.",
   "homepage": "https://flarum.help/",
   "keywords": [
     "flarum",
