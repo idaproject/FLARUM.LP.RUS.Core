@@ -26,7 +26,6 @@ composer require csi/flarum-ext-russian
 ## Авторы
 
 * [KitsuneSolar](//kitsune.solar/) (Создатель)
-* [Infinity](//flarum.help/u/Infinity) (Корректор)
 
 ## Ссылки
 

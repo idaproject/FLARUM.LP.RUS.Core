@@ -18,11 +18,18 @@ core:
       colored_header_label: "Цветная шапка"
       colors_heading: "Цвета"
       colors_text: "Выберите два цвета для стилизации форума. Первый будет использоваться в качестве цвета подсветки, второй будет использоваться в качестве фона стилевых элементов."
+      custom_header_heading: "Пользовательский заголовок"
+      custom_header_text: "Специальный HTML, который будет отображаться в самом верху страницы над собственным заголовком Flarum."
       custom_styles_heading: "Пользовательские стили"
       custom_styles_text: "Настройка внешнего вида форума при помощи пользовательского кода LESS/CSS, который переопределяет стандартные стилевые конструкции Flarum."
       dark_mode_label: "Тёмный режим"
       edit_css_button: "Редактировать CSS"
+      edit_header_button: "Редактировать заголовок"
       enter_hex_message: "Пожалуйста, введите код цвета в HEX-формате."
+      favicon_heading: "Favicon"
+      favicon_text: "Загрузка изображения, которое будет отображаться в качестве значка форума."
+      logo_heading: "Логотип"
+      logo_text: "Загрузка изображения, которое будет отображаться вместо заголовка форума."
       submit_button: => core.ref.save_changes
 
     # These translations are used in the Basics page.
@@ -69,11 +76,31 @@ core:
       submit_button: => core.ref.save_changes
       title: "Создание группы"
 
+    # These translations are used in the Edit Custom Header modal dialog.
+    edit_header:
+      customize_text: "Специальный HTML, который будет отображаться в самом верху страницы над собственным заголовком Flarum."
+      submit_button: => core.ref.save_changes
+      title: Редактировать заголовок
+
+    # These translations are used in the email page of the admin interface.
+    email:
+      account_heading: "Аккаунт SMTP"
+      addresses_heading: "Адреса"
+      driver_label: "Драйвер"
+      encryption_label: "Шифрование"
+      from_label: "Отправитель"
+      heading: => core.ref.email
+      host_label: "Хост"
+      password_label: => core.ref.password
+      port_label: "Порт"
+      server_heading: "Сервер SMTP"
+      submit_button: => core.ref.save_changes
+      text: "Настройте параметры SMTP и адресов вашего форума, которые будут использоваться для отправки e-mail."
+      username_label: => core.ref.username
+
     # These translations are used in the Extensions page.
     extensions:
       add_button: "Добавить расширение"
-      disable_button: "Отключить"
-      enable_button: "Включить"
       settings_button: => core.ref.settings
       uninstall_button: "Удалить"
 
@@ -93,6 +120,8 @@ core:
       basics_text: "Настройка названия форума, локализации и других базовых параметров."
       dashboard_button: "Консоль"
       dashboard_text: "Первый взгляд на Ваш форум."
+      email_button: => core.ref.email
+      email_text: "Настройка параметров электронной почты."
       extensions_button: "Расширения"
       extensions_text: "Добавление дополнительного функционала при помощи расширений."
       permissions_button: "Разрешения"
@@ -117,6 +146,7 @@ core:
       sign_up_label: "Регистрация"
       start_discussions_label: "Создать дискуссии"
       view_discussions_label: "Читать дискуссию"
+      view_post_ips_label: "Смотреть IP-адреса"
 
     # These translations are used in the dropdown menus on the Permissions page.
     permissions_controls:
@@ -132,6 +162,11 @@ core:
     # These translations are used in the Settings modal dialog.
     settings:
       submit_button: => core.ref.save_changes
+
+    # These translations are used in image upload buttons.
+    upload_image:
+      remove_button: "Удалить"
+      upload_button: "Выбрать изображение..."
 
   # Translations in this namespace are used by the forum user interface.
   forum:
@@ -206,6 +241,7 @@ core:
       email_label: => core.ref.email
       password_label: => core.ref.password
       submit_button: => core.ref.save_changes
+      title: "Изменить пользователя"
       username_label: => core.ref.username
 
     # These translations are used in the Forgot Password modal dialog.
@@ -213,7 +249,7 @@ core:
       dismiss_button: => core.ref.okay
       email_placeholder: => core.ref.email
       email_sent_message: "Мы отправили Вам письмо, содержащее ссылку для восстановления пароля. Проверьте папку со спамом, если Вы не получили письмо в течение нескольких минут."
-      not_found_message: "There is no user registered with that email address."
+      not_found_message: "Указанный адрес e-mail не найден."
       submit_button: "Восстановить пароль"
       text: "Введите свой E-mail, и мы вышлем Вам ссылку для сброса пароля."
       title: "Забыли пароль"
@@ -232,7 +268,7 @@ core:
     index:
       all_discussions_link: => core.ref.all_discussions
       cannot_start_discussion_button: "Нельзя создать"
-      mark_all_as_read_confirmation: "Are you sure you want to mark all discussions as read?"
+      mark_all_as_read_confirmation: "Вы уверены, что хотите отметить все дискуссии как прочитанные?"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       refresh_tooltip: "Обновить"
       start_discussion_button: => core.ref.start_a_discussion
@@ -265,6 +301,7 @@ core:
 
     # These translations are used by tooltips displayed for individual posts.
     post:
+      edited_text: "Изменено"
       edited_tooltip: "{username} отредактировал(а) {ago}"
       number_tooltip: "Сообщение #{number}"
 
@@ -284,6 +321,7 @@ core:
 
     # These translations are displayed between posts in the post stream.
     post_stream:
+      discussion_renamed_old_tooltip: 'The old title was: "{old}"'
       discussion_renamed_text: '{username} изменил(а) название с "{old}" на "{new}".'
       load_more_button: => core.ref.load_more
       reply_placeholder: => core.ref.write_a_reply
@@ -323,6 +361,7 @@ core:
     user:
       avatar_remove_button: "Удалить"
       avatar_upload_button: "Загрузить"
+      avatar_upload_tooltip: "Загрузить новый аватар"
       bio_placeholder: "Напишите что-нибудь о себе"
       discussions_link: => core.ref.discussions
       in_discussion_text: 'в "{discussion}"'
@@ -374,19 +413,38 @@ core:
       three_text: "{first}, {second}, и {third}"
       two_text: "{first} и {second}"
 
-  # Translations in this namespace are used in basic HTML interface.
-  basic:
-    javascript_disabled_message: "Этот сайт лучше всего просматривать в современном браузере с включённым JavaScript."
-    load_error_message: "Что-то пошло не так при попытке загрузки полной версии этого сайта."
-    loading_text: "Загрузка..."
-    next_page_button: "Следующая страница"
-    previous_page_button: "Предыдущая страница"
+  # Translations in this namespace are used in views other than Flarum's normal JS client.
+  views:
+
+    # Translations in this namespace are displayed by the basic HTML content loader.
+    content:
+      javascript_disabled_message: "Этот сайт лучше всего просматривать в современном браузере с включённым JavaScript."
+      load_error_message: "Что-то пошло не так при попытке загрузки полной версии этого сайта."
+      loading_text: "Загрузка..."
+
+    # Translations in this namespace are displayed in the basic HTML discussion view.
+    discussion:
+      next_page_button: => core.ref.core.ref.next_page
+      previous_page_button: "Предыдущая страница"
+
+    # Translations in this namespace are displayed by the basic HTML discussion index.
+    index:
+      all_discussions_heading: => core.ref.all_discussions
+      next_page_button: => core.ref.next_page
+
+    # Translations in this namespace are displayed by the Reset Password interface.
+    reset:
+      confirm_password_label: => core.ref.confirm_password
+      password_label: => core.ref.password
+      submit_button: "Сбросить пароль"
+      title: => core.ref.reset_your_password
 
   # Translations in this namespace are used in emails sent by the forum.
   email:
 
     # These translations are used in emails sent when users register new accounts.
     activate_account:
+      subject: "Активация Вашего аккаунта"
       body: |
         Привет, {username}!
 
@@ -396,10 +454,10 @@ core:
         {url}
 
         Если Вы не регистрировались, пожалуйста, проигнорируйте это сообщение.
-      subject: "Активация Вашего аккаунта"
 
     # These translations are used in emails sent when users change their email address.
     confirm_email:
+      subject: "Подтверждение нового адреса e-mail"
       body: |
         Привет, {username}!
 
@@ -409,10 +467,10 @@ core:
         {url}
 
         Если это не Вы, пожалуйста, проигнорируйте это сообщение.
-      subject: "Подтверждение нового адреса электронной почты"
 
     # These translations are used in emails sent when users ask to reset their passwords.
     reset_password:
+      subject: => core.ref.reset_your_password
       body: |
         Привет, {username}!
 
@@ -422,7 +480,6 @@ core:
         {url}
 
         Если Вы не хотите менять свой пароль, просто проигнорируйте это сообщение и ничего не произойдёт.
-      subject: "Сбросить пароль"
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
@@ -431,8 +488,9 @@ core:
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
     all_discussions: "Все дискуссии"
-    change_email: "Изменить E-mail"
+    change_email: "Изменить e-mail"
     change_password: "Изменить пароль"
+    confirm_password: "Подтвердить пароль"
     confirmation_email_sent: "Мы отправили письмо с подтверждением на адрес {email}. Если Вы не получите письмо в ближайшее время, проверьте папку со спамом."
     delete: "Удалить"
     delete_forever: "Удалить (физ.)"
@@ -443,10 +501,12 @@ core:
     log_in: "Войти"
     log_out: "Выйти"
     mark_all_as_read: "Отметить всё как прочитанное"
+    next_page: "Следующая страница"
     notifications: "Оповещения"
     okay: "OK"                                      # Referenced by flarum-tags.yml
     password: "Пароль"
     reply: "Ответить"                               # Referenced by flarum-mentions.yml
+    reset_your_password: "Сбросить пароль"
     restore: "Восстановить"
     save_changes: "Сохранить"                       # Referenced by flarum-suspend.yml, flarum-tags.yml
     settings: "Настройки"

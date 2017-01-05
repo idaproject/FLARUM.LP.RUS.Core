@@ -17,19 +17,15 @@
       "name": "Kitsune Solar",
       "email": "msg@kitsune.solar",
       "homepage": "https://kitsune.solar/"
-    },
-    {
-      "name": "Infinity",
-      "email": "animals.ru@mail.ru"
     }
   ],
   "support": {
-    "source": "https://github.com/cbrspc/FLARUM.LP.RUS.Core",
+    "source": "https://github.com/CYBERSPACE-Industries/FLARUM.LP.RUS.Core",
     "issues": "https://flarum.help/d/2/",
     "forum": "https://flarum.help/"
   },
   "require": {
-    "flarum/core": "^0.1.0-beta.5"
+    "flarum/core": "^0.1.0-beta.6"
   },
   "suggest": {
     "flarum/flags": "Разрешает пользователям отмечать сообщения для рассмотрения модератором.",
@@ -46,7 +42,7 @@
       "title": "Русский",
       "icon": {
         "image": "icon.svg",
-        "backgroundColor": "#fff",
+        "backgroundColor": "#ffffff",
         "backgroundSize": "cover",
         "backgroundPosition": "center"
       }
